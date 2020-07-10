@@ -86,6 +86,10 @@ header .header .navbar_btn {
   z-index: 0;
 }
 
+#date > em {
+  font-style: normal;
+}
+
 .home_banner {
   height: 100vh;
   display: -webkit-box;
