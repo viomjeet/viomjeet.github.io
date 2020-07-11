@@ -1,0 +1,53 @@
+[
+    {
+        "datatarget": "_blank",
+        "datahref": "https://www.linkedin.com/in/viomjeet/",
+        "datarel": [
+            "noopener,Linkedin"
+        ],
+        "title": "Linked in",
+        "icon": [
+            "fab",
+            "fa-linkedin-in"
+        ]
+    },
+    {
+        "datatarget": "_self",
+        "datahref": "mailto:viomjeet@gmail.com",
+        "title": "Email",
+        "datarel": [
+            "noopener",
+            "Email"
+        ],
+        "icon": [
+            "fad",
+            "fa-envelope-open"
+        ]
+    },
+    {
+        "datatarget": "_self",
+        "datahref": "tel:9716785812",
+        "title": "Mobile",
+        "datarel": [
+            "noopener",
+            "Mobile"
+        ],
+        "icon": [
+            "fad",
+            "fa-mobile"
+        ]
+    },
+    {
+        "datatarget": "_self",
+        "datahref": "skype:live:viomjeet?chat",
+        "title": "Skype",
+        "datarel": [
+            "noopener",
+            "Skype"
+        ],
+        "icon": [
+            "fab",
+            "fa-skype"
+        ]
+    }
+]
