@@ -13,22 +13,32 @@ class Header extends React.Component {
         )
     }
 }
-
 class Content extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            pagetitle: "VIKAS KUMAR",
+            pagebody: 'Front End Developer',
+            social: []
+        }
+        fetch('./js/social.json').then(response => response.json())
+            .then(data => {
+                this.setState({ social: data.map(items => items) });
+                console.log(this.state.social);
+            })
+            .catch(error => console.log(error));
+
+    }
     render() {
+        const { social } = this.state;
         return (
             <div className="center_content">
                 <h1 className="page_title">VIKAS KUMAR</h1>
                 <p className="page_body">Front End Developer</p>
                 <ul className="social_icons">
-                    <li><a target="_blank" href="https://www.linkedin.com/in/viomjeet/" rel="noopener Linkedin"
-                        title="Linked in"><i className="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="mailto:viomjeet@gmail.com" rel="noopener Email" title="Email"><i
-                        className="fad fa-envelope-open"></i></a></li>
-                    <li><a href="tel:9716785812" rel="noopener Mobile" title="Mobile"><i className="fad fa-mobile"></i></a></li>
-                    <li><a href="skype:live:viomjeet?chat" rel="noopener Skype" title="Skype"><i
-                        className="fab fa-skype"></i></a>
-                    </li>
+                    {social.map((items, index) => {
+                        return (<li key={index}><a target={items.datatarget} href={items.datahref} rel={items.datarel[0], items.datarel[1]} title={items.title}><i className={items.icon[0] + " " + items.icon[1]}></i></a></li>)
+                    })}
                 </ul>
             </div>
         )
@@ -36,7 +46,12 @@ class Content extends React.Component {
 }
 
 class Footer extends React.Component {
-    state = { date: new Date() }
+    constructor() {
+        super();
+        this.state = {
+            date: new Date(),
+        }
+    }
     render() {
         const copy = String.fromCharCode(169);
         const { date } = this.state;
