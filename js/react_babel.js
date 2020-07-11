@@ -24,7 +24,6 @@ class Content extends React.Component {
         fetch('./js/social.json').then(response => response.json())
             .then(data => {
                 this.setState({ social: data.map(items => items) });
-                console.log(this.state.social);
             })
             .catch(error => console.log(error));
 
