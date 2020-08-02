@@ -86,15 +86,13 @@ class Content extends React.Component {
                                         <div className="skills">
                                             <img src={`${'./images/img/'}${items.img}`} />
                                             <strong>{items.title}</strong>
-                                            <div className="cusProgress">
-                                                <div className="progress">
-                                                    <div className={`progress-bar ${items.bg}`}  role="progressbar" style={{ "width": `${items.progress}%` }} aria-valuenow={items.progress} aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-
-                                            </div>
                                         </div>
-
                                     </a>
+                                    <div className="cusProgress">
+                                        <div className="progress">
+                                            <div className={`progress-bar ${items.bg}`} role="progressbar" style={{ "width": `${items.progress}%` }} aria-valuenow={items.progress} aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
                                 </li>)
                             })}
                         </ul>
