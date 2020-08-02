@@ -163,6 +163,7 @@ html,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .home_banner .bannerIn .center_content .boxPanel .social_icons li a {
@@ -220,7 +221,11 @@ html,
           justify-content: space-between;
 }
 
-.home_banner .bannerIn .center_content .boxPanel .projects .skills {
+.home_banner .bannerIn .center_content .boxPanel .projects li {
+  position: relative;
+}
+
+.home_banner .bannerIn .center_content .boxPanel .projects li a .skills {
   padding: 10px 10px 20px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,7 +237,7 @@ html,
   position: relative;
 }
 
-.home_banner .bannerIn .center_content .boxPanel .projects .skills > img {
+.home_banner .bannerIn .center_content .boxPanel .projects li a .skills > img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,7 +245,7 @@ html,
   margin-right: 10px;
 }
 
-.home_banner .bannerIn .center_content .boxPanel .projects .skills .cusProgress {
+.home_banner .bannerIn .center_content .boxPanel .projects li .cusProgress {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -249,8 +254,9 @@ html,
   z-index: 99;
 }
 
-.home_banner .bannerIn .center_content .boxPanel .projects .skills .cusProgress .progress {
+.home_banner .bannerIn .center_content .boxPanel .projects li .cusProgress .progress {
   height: 5px;
+  border-radius: 0px;
 }
 
 .home_banner .bannerIn .center_content .boxPanel .projects > li {
