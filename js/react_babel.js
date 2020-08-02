@@ -18,7 +18,7 @@ class Content extends React.Component {
         super();
         this.state = {
             pagetitle: "VIKAS KUMAR",
-            pagebody: 'Freelancer, Front End Developer, front-end ui developer',
+            pagebody: 'Freelancer, front-end, front-end ui developer',
             social: [],
             projects: [
                 { "title": "xtbox", "datarel": ["noopener,xtbox"], "datatarget": "_blank", "url": "https://viomjeet.net/xtbox", "skills": ["React", "HTML5", "SASS"] },
