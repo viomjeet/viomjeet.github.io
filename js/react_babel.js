@@ -32,7 +32,7 @@ class Content extends React.Component {
             ],
             skills: [
                 { "title": "React.js", "img": "react.png", "progress": "50", "bg": "bg-success" },
-                { "title": "React-Redux", "img": "redux.png", "progress": "30", "bg": "bg-warning" },
+                { "title": "React-Redux", "img": "redux.png", "progress": "50", "bg": "bg-warning" },
                 { "title": "javascript", "img": "js.png", "progress": "70", "bg": "bg-danger" },
                 { "title": "jquery.js", "img": "jquery.png", "progress": "80", "bg": "bg-info" },
                 { "title": "HTML5", "img": "html.png", "progress": "80", "bg": "bg-secondary" },
