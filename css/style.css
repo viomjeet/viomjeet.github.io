@@ -123,7 +123,8 @@ html,
 
 .home_banner .bannerIn .center_content .page_title {
   font-family: "Anton", sans-serif;
-  font-size: 3.6rem;
+  letter-spacing: .1rem;
+  font-size: 3.4rem;
   margin: 0;
 }
 
@@ -299,7 +300,6 @@ html,
 .home_banner .bannerIn .center_content .boxPanel .projects > li > a .projectName strong {
   font-weight: 600;
   color: #000;
-  text-transform: uppercase;
   background: #fdfdfd;
   border-bottom: 1px solid #f9f9f9;
   display: block;
@@ -350,7 +350,6 @@ html,
   font-weight: 900;
   display: inline-block;
   width: 20px;
-  height: 20px;
   text-align: center;
 }
 
@@ -388,6 +387,19 @@ footer .ecart-footer a.footer_link {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 0 30% !important;
             flex: 1 0 30% !important;
+    margin: .2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .home_banner .bannerIn .center_content {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
+  .home_banner .bannerIn .center_content .boxPanel .projects li {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 0 46% !important;
+            flex: 1 0 46% !important;
     margin: .2rem;
   }
 }
