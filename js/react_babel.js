@@ -23,12 +23,12 @@ class Content extends React.Component {
             projects: [
                 { "title": "xtReduxCrud", "datarel": ["noopener,xtReduxCrud"], "datatarget": "_blank", "url": "https://viomjeet.net/xtReduxCrud", "skills": ["React", "React-Redux", "HTML5", "CSS"] },
 		{ "title": "xtbox", "datarel": ["noopener,xtbox"], "datatarget": "_blank", "url": "https://viomjeet.net/xtbox", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
-                { "title": "xtp", "datarel": ["noopener,xtp"], "datatarget": "_blank", "url": "https://viomjeet.net/xtp/", "skills": ["React", "HTML5", "SASS"] },
-                { "title": "jstst", "datarel": ["noopener,jstst"], "datatarget": "_blank", "url": "https://viomjeet.net/jstst", "skills": ["jQuery", "HTML5", "CSS"] },
                 { "title": "breakingbad", "datarel": ["noopener,breakingbad"], "datatarget": "_blank", "url": "https://viomjeet.net/breakingbad", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
                 { "title": "redux_1", "datarel": ["noopener,redux_1"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_1", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
                 { "title": "redux_2", "datarel": ["noopener,redux_2"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_2", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
-                { "title": "ecart", "datarel": ["noopener,ecart"], "datatarget": "_blank", "url": "https://viomjeet.net/ecart", "skills": ["React", "HTML5", "CSS"] },
+                { "title": "xtp", "datarel": ["noopener,xtp"], "datatarget": "_blank", "url": "https://viomjeet.net/xtp/", "skills": ["React", "HTML5", "SASS"] },
+                { "title": "jstst", "datarel": ["noopener,jstst"], "datatarget": "_blank", "url": "https://viomjeet.net/jstst", "skills": ["jQuery", "HTML5", "CSS"] },
+		{ "title": "ecart", "datarel": ["noopener,ecart"], "datatarget": "_blank", "url": "https://viomjeet.net/ecart", "skills": ["React", "HTML5", "CSS"] },
                 { "title": "ReactCRUDAPP", "datarel": ["noopener,ReactCRUDAPP"], "url": "https://viomjeet.net/ReactCRUDAPP", "skills": ["React", "HTML5", "CSS", "Bootstrap"] }
             ],
             skills: [
