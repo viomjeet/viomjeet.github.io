@@ -21,19 +21,19 @@ class Content extends React.Component {
             pagebody: 'Freelancer, front-end, front-end ui developer',
             social: [],
             projects: [
-                { "title": "xtReduxCrud", "datarel": ["noopener,xtReduxCrud"], "datatarget": "_blank", "url": "https://viomjeet.net/xtReduxCrud", "skills": ["React", "React-Redux", "HTML5", "CSS"] },
-		{ "title": "xtbox", "datarel": ["noopener,xtbox"], "datatarget": "_blank", "url": "https://viomjeet.net/xtbox", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
+                { "title": "xtReduxCrud", "datarel": ["noopener,xtReduxCrud"], "datatarget": "_blank", "url": "https://viomjeet.net/xtReduxCrud", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
+                { "title": "xtbox", "datarel": ["noopener,xtbox"], "datatarget": "_blank", "url": "https://viomjeet.net/xtbox", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
                 { "title": "breakingbad", "datarel": ["noopener,breakingbad"], "datatarget": "_blank", "url": "https://viomjeet.net/breakingbad", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
                 { "title": "redux_1", "datarel": ["noopener,redux_1"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_1", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
                 { "title": "redux_2", "datarel": ["noopener,redux_2"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_2", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
                 { "title": "xtp", "datarel": ["noopener,xtp"], "datatarget": "_blank", "url": "https://viomjeet.net/xtp/", "skills": ["React", "HTML5", "SASS"] },
                 { "title": "jstst", "datarel": ["noopener,jstst"], "datatarget": "_blank", "url": "https://viomjeet.net/jstst", "skills": ["jQuery", "HTML5", "CSS"] },
-		{ "title": "ecart", "datarel": ["noopener,ecart"], "datatarget": "_blank", "url": "https://viomjeet.net/ecart", "skills": ["React", "HTML5", "CSS"] },
+                { "title": "ecart", "datarel": ["noopener,ecart"], "datatarget": "_blank", "url": "https://viomjeet.net/ecart", "skills": ["React", "HTML5", "CSS"] },
                 { "title": "ReactCRUDAPP", "datarel": ["noopener,ReactCRUDAPP"], "url": "https://viomjeet.net/ReactCRUDAPP", "skills": ["React", "HTML5", "CSS", "Bootstrap"] }
             ],
             skills: [
                 { "title": "React.js", "img": "react.png", "progress": "50", "bg": "bg-success" },
-                { "title": "React-Redux", "img": "redux.png", "progress": "50", "bg": "bg-warning" },
+                { "title": "Redux", "img": "redux.png", "progress": "50", "bg": "bg-warning" },
                 { "title": "javascript", "img": "js.png", "progress": "70", "bg": "bg-danger" },
                 { "title": "jquery.js", "img": "jquery.png", "progress": "80", "bg": "bg-info" },
                 { "title": "HTML5", "img": "html.png", "progress": "80", "bg": "bg-secondary" },
@@ -77,7 +77,6 @@ class Content extends React.Component {
                             })}
                         </ul>
                     </div>
-
                     <div className="boxPanel">
                         <h4 className="text-center">Skills</h4>
                         <ul className="projects">
@@ -98,8 +97,6 @@ class Content extends React.Component {
                             })}
                         </ul>
                     </div>
-
-
                     <div className="boxPanel">
                         <h4 className="text-center">Contact me</h4>
                         <ul className="social_icons">
@@ -117,21 +114,13 @@ class Content extends React.Component {
 }
 
 class Footer extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            date: new Date(),
-        }
-    }
     render() {
-        const copy = String.fromCharCode(169);
-        const { date } = this.state;
         return (
             <footer>
                 <div className="container">
                     <div className="ecart-footer">
-                        <a className="footer_link" href="https://www.viomjeet.net/">{copy} viomjeet
-					<span id="date">&nbsp; {date.getFullYear()}</span></a>
+                        <a className="footer_link" href="https://www.viomjeet.net/">&copy; viomjeet
+					<span id="date">&nbsp;{new Date().getFullYear()}</span></a>
                         <span>Made with <i className="text-danger fad fa-heart"></i> in india</span>
                     </div>
                 </div>
