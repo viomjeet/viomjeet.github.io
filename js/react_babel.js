@@ -18,18 +18,18 @@ class Content extends React.Component {
         super();
         this.state = {
             pagetitle: "VIKAS KUMAR",
-            pagebody: 'Freelancer, front-end, front-end ui developer',
+            pagebody: 'Freelancer, front-end developer, Web Developer',
             social: [],
             projects: [
-                { "title": "xtReduxCrud", "datarel": ["noopener,xtReduxCrud"], "datatarget": "_blank", "url": "https://viomjeet.net/xtReduxCrud", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
-                { "title": "xtbox", "datarel": ["noopener,xtbox"], "datatarget": "_blank", "url": "https://viomjeet.net/xtbox", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
-                { "title": "breakingbad", "datarel": ["noopener,breakingbad"], "datatarget": "_blank", "url": "https://viomjeet.net/breakingbad", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
-                { "title": "redux_1", "datarel": ["noopener,redux_1"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_1", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
-                { "title": "redux_2", "datarel": ["noopener,redux_2"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_2", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
-                { "title": "xtp", "datarel": ["noopener,xtp"], "datatarget": "_blank", "url": "https://viomjeet.net/xtp/", "skills": ["React", "HTML5", "SASS"] },
-                { "title": "jstst", "datarel": ["noopener,jstst"], "datatarget": "_blank", "url": "https://viomjeet.net/jstst", "skills": ["jQuery", "HTML5", "CSS"] },
-                { "title": "ecart", "datarel": ["noopener,ecart"], "datatarget": "_blank", "url": "https://viomjeet.net/ecart", "skills": ["React", "HTML5", "CSS"] },
-                { "title": "ReactCRUDAPP", "datarel": ["noopener,ReactCRUDAPP"], "url": "https://viomjeet.net/ReactCRUDAPP", "skills": ["React", "HTML5", "CSS", "Bootstrap"] }
+                { "bgimg": "code.jpg", "title": "xtReduxCrud", "datarel": ["noopener,xtReduxCrud"], "datatarget": "_blank", "url": "https://viomjeet.net/xtReduxCrud", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
+                { "bgimg": "code.jpg", "title": "xtbox", "datarel": ["noopener,xtbox"], "datatarget": "_blank", "url": "https://viomjeet.net/xtbox", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
+                { "bgimg": "code.jpg", "title": "breakingbad", "datarel": ["noopener,breakingbad"], "datatarget": "_blank", "url": "https://viomjeet.net/breakingbad", "skills": ["React", "React-Redux", "HTML5", "SASS"] },
+                { "bgimg": "code.jpg", "title": "redux_1", "datarel": ["noopener,redux_1"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_1", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
+                { "bgimg": "code.jpg", "title": "redux_2", "datarel": ["noopener,redux_2"], "datatarget": "_blank", "url": "https://viomjeet.net/redux_2", "skills": ["React", "React-Redux", "HTML5", "Bootstrap"] },
+                { "bgimg": "code.jpg", "title": "xtp", "datarel": ["noopener,xtp"], "datatarget": "_blank", "url": "https://viomjeet.net/xtp/", "skills": ["React", "HTML5", "SASS"] },
+                { "bgimg": "code.jpg", "title": "jstst", "datarel": ["noopener,jstst"], "datatarget": "_blank", "url": "https://viomjeet.net/jstst", "skills": ["jQuery", "HTML5", "CSS"] },
+                { "bgimg": "code.jpg", "title": "ecart", "datarel": ["noopener,ecart"], "datatarget": "_blank", "url": "https://viomjeet.net/ecart", "skills": ["React", "HTML5", "CSS"] },
+                { "bgimg": "code.jpg", "title": "ReactCRUDAPP", "datarel": ["noopener,ReactCRUDAPP"], "url": "https://viomjeet.net/ReactCRUDAPP", "skills": ["React", "HTML5", "CSS", "Bootstrap"] }
             ],
             skills: [
                 { "title": "React.js", "img": "react.png", "progress": "50", "bg": "bg-success" },
@@ -56,17 +56,28 @@ class Content extends React.Component {
         const { projects } = this.state;
         const { skills } = this.state;
         return (
-            <div className="container">
-                <div className="center_content">
+
+            <div className="center_content">
+                <div className="coderBanner">
                     <h1 className="page_title">{this.state.pagetitle}</h1>
                     <p className="page_body">{this.state.pagebody}</p>
+                </div>
+                <div className="container">
                     <div className="boxPanel">
-                        <h4 className="text-center">Latest Projectes</h4>
+                        <h4>Latest Projectes</h4>
                         <ul className="projects">
                             {projects.map((items, index) => {
                                 return (<li key={index}>
                                     <a target={items.datatarget} href={items.url} rel={items.datarel[0], items.datarel[1]}>
-                                        <div className="projectName"><strong>{items.title}</strong></div>
+
+                                        <div className="projectImg">
+                                            <img src={`${'images/'}${items.bgimg}`} alt="" />
+                                        </div>
+
+                                        <div className="projectName">
+                                            <strong>{items.title}</strong>
+
+                                        </div>
                                         <ul>
                                             {items.skills.map(skills => (
                                                 <li key={skills}>{skills}</li>
@@ -78,7 +89,7 @@ class Content extends React.Component {
                         </ul>
                     </div>
                     <div className="boxPanel">
-                        <h4 className="text-center">Skills</h4>
+                        <h4>Skills</h4>
                         <ul className="projects">
                             {skills.map((items, index) => {
                                 return (<li key={index}>
@@ -98,7 +109,7 @@ class Content extends React.Component {
                         </ul>
                     </div>
                     <div className="boxPanel">
-                        <h4 className="text-center">Contact me</h4>
+                        <h4>Contact me</h4>
                         <ul className="social_icons">
                             {social.map((items, index) => {
                                 return (<li key={index}>
