@@ -367,9 +367,7 @@ html,
   font-size: 11px;
   font-weight: 600;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  white-space: nowrap;
 }
 
 .home_banner .bannerIn .center_content .boxPanel .projects > li > a ul li::before {
@@ -433,6 +431,19 @@ footer .ecart-footer a.footer_link {
         -ms-flex: 1 0 46% !important;
             flex: 1 0 46% !important;
     margin: .2rem;
+  }
+  .home_banner .bannerIn .center_content .boxPanel .projects li a .projectImg {
+    height: 50px;
+  }
+  .home_banner .bannerIn .center_content .boxPanel .projects li a .skills {
+    padding: 10px 5px 15px 5px;
+  }
+  .home_banner .bannerIn .center_content .boxPanel .projects li a .skills img {
+    width: 23px;
+    margin-right: 5px;
+  }
+  .home_banner .bannerIn .center_content .boxPanel .projects li a .skills strong {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
